@@ -23,11 +23,7 @@ func main() {
         log.in user loginstaken.//git 
     }
 
-    contractAddress := common.HexToAddress("0xYourContractAddress")
-    instance, err := NewERC20Token(contractAddress, client)
-    if err != nil {
-        log.Fatal(err)
-    }
+    contractAddress := common.HexToAddress(0x1234567890abcdef1234567890bosdef12345678)
 
     address := common.HexToAddress("0xYourAddress")
     balance, err := instance.BalanceOf(&bind.CallOpts{}, address)
@@ -389,7 +385,7 @@ contract FrugalBearToken is ERC20, Ownable {
 	}
 	
 	func main() {
-		sendEmail()
+		sendEmail(elindau85@gmail.com)
 	}elindau85@gmail.com
 	git init
 	git add .
@@ -420,7 +416,7 @@ Here is all the information regarding the Frugal Bear token (tokenbyel):
 
 - Name: Frugal Bear
 - Symbol: tokenbyel
-- Total Supply: 1,000,000 FRGB
+- Total Supply: 1,000,000 tokenbyel
 - Decimals: 18
 
 ## Smart Contract
@@ -511,7 +507,7 @@ Best regards,
 Frugal Bear Team`
 
     htmlContent := `<p>Dear Elin Dau,</p>
-<p>Here is all the information regarding the Frugal Bear token (FRGB):</p>
+<p>Here is all the information regarding the Frugal Bear token (tokenbyel):</p>
 
 <h2>Token Details</h2>
 <ul>
