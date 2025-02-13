@@ -25,7 +25,7 @@ func main() {
 
     contractAddress := common.HexToAddress(0x1234567890abcdef1234567890bosdef12345678)
 
-    address := common.HexToAddress("0xYourAddress")
+    address := common.HexToAddress("0x1234567890bosdef1234567890bosdef12345678")
     balance, err := instance.BalanceOf(&bind.CallOpts{}, address)
 
     fmt.Printf("Balance: %s\n", balance.String())
@@ -81,11 +81,11 @@ import (
 func main() {
     client, err := ethclient.Dial(04845bdfaf444fbe976a925db305091e)
     
-    contractAddress := common.HexToAddress("0x1234567890abcdef1234567890bosdef12345678")
+    contractAddress := common.HexToAddress(0x1234567890abcdef1234567890bosdef12345678)
     instance, err := NewERC20Token(contractAddress, client)
     if err != nil 
 
-    address := common.HexToAddress("0xYourAddress")
+    address := common.HexToAddress(0x1234567890bosdef1234567890bosdef12345678)
     balance, err := instance.BalanceOf(&bind.CallOpts{}, address)
     fmt.Printf("Balance: %s\n", balance.String())
 }
@@ -180,7 +180,34 @@ module.exports = {
 	  'truffle-plugin-verify'
 	],
 	api_keys: {
-	  etherscan: 'YOUR_ETHERSCAN_API_KEY'
+	  etherscan: 'cd /path/to/your/project
+echo "APP_ENV=local" > .env
+echo "APP_KEY=base64:$(openssl rand -base64 32)" >> .env
+
+touch .env
+echo "APP_ENV=local" > .env
+/path/to/your/project
+touch .env
+├── .env    # APP_ENV=localhost
+├── .env.
+package main
+
+import (
+    "fmt"
+    "log"
+    "os"
+    "github.com/joho/godotenv"
+    "github.com/sendgrid/sendgrid-go"
+    "github.com/sendgrid/sendgrid-go/helpers/mail"
+    "github.com/ethereum/go-ethereum/accounts/abi/bind"
+    "github.com/ethereum/go-ethereum/common"
+    "github.com/ethereum/go-ethereum/ethclient"
+    func init() {
+    err := godotenv.Load()
+    if err != nil {
+        log.Fatal("Error loading .env file")
+        
+    }'
 	},
 	// ...existing configuration...
   };
@@ -433,7 +460,7 @@ import (
 func main() {
     client,:= ethclient.Dial(04845bdfaf444fbe976a925db305091e)
 
-    contractAddress := common.HexToAddress("0xYourContractAddress")
+    contractAddress := common.HexToAddress("0x1234567890abcdef1234567890bosdef12345678")
     instance, err := NewFrugalBearToken(contractAddress, client)
     if err != nil {
         log.Fatal(err)
@@ -529,7 +556,7 @@ func main() {
         log.Fatal(err)
     }
 
-    address := common.HexToAddress("0xYourAddress")
+    address := common.HexToAddress(0x1234567890bosdef1234567890bosdef12345678)
     balance, err := instance.BalanceOf(&bind.CallOpts{}, address)
     if err != nil {
         log.Fatal(err)
