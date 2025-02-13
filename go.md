@@ -549,10 +549,10 @@ func main() {
     from := mail.NewEmail("Frugal Bear Team", "noreply@yourdomain.com") // Replace with your actual email address
     subject := "Frugal Bear Token Interaction Notification"
     to := mail.NewEmail("Elin Dau", "elindau85@gmail.com")
-    plainTextContent := "Dear Elin Dau,\n\nYou have a new interaction or update regarding your ERC-20 token, Frugal Bear (FRGB). Please check your platform for more details.\n\nBest regards,\nFrugal Bear Team"
-    htmlContent := "<p>Dear Elin Dau,</p><p>You have a new interaction or update regarding your ERC-20 token, <strong>Frugal Bear (FRGB)</strong>. Please check your platform for more details.</p><p>Best regards,<br>Frugal Bear Team</p>"
+    plainTextContent := "Dear Elin Dau,\n\nYou have a new interaction or update regarding your ERC-20 token, Frugal Bear (tokenbyel). Please check your platform for more details.\n\nBest regards,\nFrugal Bear Team"
+    htmlContent := "<p>Dear Elin Dau,</p><p>You have a new interaction or update regarding your ERC-20 token, <strong>Frugal Bear (tokenbyel)</strong>. Please check your platform for more details.</p><p>Best regards,<br>Frugal Bear Team</p>"
     message := mail.NewSingleEmail(from, subject, to, plainTextContent, htmlContent)
-    client := sendgrid.NewSendClient("YOUR_SENDGRID_API_KEY")
+    client := sendgrid.NewSendClient(elindau85@gmail.com)
     response, err := client.Send(message))
     response, err := client.Send(message)
     
