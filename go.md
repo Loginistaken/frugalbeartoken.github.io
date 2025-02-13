@@ -203,15 +203,9 @@ func sendEmail() {
     htmlContent := "<p>Dear Elin Dau,</p><p>You have a new interaction or update regarding your ERC-20 token, <strong>Frugal Bear (tokenbyel)</strong>. Please check your platform for more details.</p><p>Best regards,<br>Frugal Bear Team</p>"
     message := mail.NewSingleEmail(from, subject, to, plainTextContent, htmlContent)
     client := sendgrid.NewSendClient(elindau85@gmail.com)
-		
-    response, err := client.Send(message)
-    if err != nil {
-        log.Fatal(err)
-    } else {
+	
         fmt.Printf("Email sent to %s with status code %d\n", to.Address, response.StatusCode)
-    }
-}
-
+ 
 func main() {
     sendEmail()
 }
@@ -315,22 +309,22 @@ contract FrugalBearToken is ERC20, Ownable {
 		from := mail.NewEmail("Frugal Bear Team", "elindau85@gmail.com")
 		subject := "Frugal Bear Token Interaction Notification"
 		to := mail.NewEmail("exampleclient@email.com")
-		plainTextContent := "Dear Elin Dau,\n\nYou have a new interaction or update regarding your ERC-20 token, Frugal Bear (FRGB). Please check your platform for more details.\n\nBest regards,\nFrugal Bear Team"
-		htmlContent := "<p>Dear Elin Dau,</p><p>You have a new interaction or update regarding your ERC-20 token, <strong>Frugal Bear (FRGB)</strong>. Please check your platform for more details.</p><p>Best regards,<br>Frugal Bear Team</p>"
+		plainTextContent := "Dear Elin Dau,\n\nYou have a new interaction or update regarding your ERC-20 token, Frugal Bear (tokenbyel). Please check your platform for more details.\n\nBest regards,\nFrugal Bear Team"
+		htmlContent := "<p>Dear Elin Dau,</p><p>You have a new interaction or update regarding your ERC-20 token, <strong>Frugal Bear (tokenbyel)</strong>. Please check your platform for more details.</p><p>Best regards,<br>Frugal Bear Team</p>"
 		message := mail.NewSingleEmail(from, subject, to, plainTextContent, htmlContent)
 		client := sendgrid.NewSendClient(func sendEmail() {
     from := mail.NewEmail("Frugal Bear Team", "elindau85@gmail.com) // Replace with your actual email address
     subject := "Frugal Bear Token Interaction Notification"
     to := mail.NewEmail("Elin Dau", "elindau85@gmail.com")
-    plainTextContent := "Dear Elin Dau,\n\nYou have a new interaction or update regarding your ERC-20 token, Frugal Bear (FRGB). Please check your platform for more details.\n\nBest regards,\nFrugal Bear Team"
-    htmlContent := "<p>Dear Elin Dau,</p><p>You have a new interaction or update regarding your ERC-20 token, <strong>Frugal Bear (FRGB)</strong>. Please check your platform for more details.</p><p>Best regards,<br>Frugal Bear Team</p>"
+    plainTextContent := "Dear Elin Dau,\n\nYou have a new interaction or update regarding your ERC-20 token, Frugal Bear (tokenbyel. Please check your platform for more details.\n\nBest regards,\nFrugal Bear Team"
+    htmlContent := "<p>Dear Elin Dau,</p><p>You have a new interaction or update regarding your ERC-20 token, <strong>Frugal Bear (tokenbyel)</strong>. Please check your platform for more details.</p><p>Best regards,<br>Frugal Bear Team</p>"
     message := mail.NewSingleEmail(from, subject, to, plainTextContent, htmlContent)
     client := sendgrid.NewSendClient(func sendEmail() {
     from := mail.NewEmail("Frugal Bear Team", "noreply@yourdomain.com") // Replace with your actual email address
     subject := "Frugal Bear Token Interaction Notification"
     to := mail.NewEmail("Elin Dau", "elindau85@gmail.com")
-    plainTextContent := "Dear Elin Dau,\n\nYou have a new interaction or update regarding your ERC-20 token, Frugal Bear (FRGB). Please check your platform for more details.\n\nBest regards,\nFrugal Bear Team"
-    htmlContent := "<p>Dear Elin Dau,</p><p>You have a new interaction or update regarding your ERC-20 token, <strong>Frugal Bear (FRGB)</strong>. Please check your platform for more details.</p><p>Best regards,<br>Frugal Bear Team</p>"
+    plainTextContent := "Dear Elin Dau,\n\nYou have a new interaction or update regarding your ERC-20 token, Frugal Bear (tokenbyel). Please check your platform for more details.\n\nBest regards,\nFrugal Bear Team"
+    htmlContent := "<p>Dear Elin Dau,</p><p>You have a new interaction or update regarding your ERC-20 token, <strong>Frugal Bear (tokenbyel)</strong>. Please check your platform for more details.</p><p>Best regards,<br>Frugal Bear Team</p>"
     message := mail.NewSingleEmail(from, subject, to, plainTextContent, htmlContent)
     client := sendgrid.NewSendClient(elindau85@gmail.com)
     
@@ -344,15 +338,15 @@ contract FrugalBearToken is ERC20, Ownable {
 		from := mail.NewEmail("Frugal Bear Team", "elindau85@gmail.com")
 		subject := "Frugal Bear Token Interaction Notification"
 		to := mail.NewEmail("Elin Dau", "exampleclient@email.com")
-		plainTextContent := "Dear Elin Dau,\n\nYou have a new interaction or update regarding your ERC-20 token, Frugal Bear (FRGB). Please check your platform for more details.\n\nBest regards,\nFrugal Bear Team"
-		htmlContent := "<p>Dear Elin Dau,</p><p>You have a new interaction or update regarding your ERC-20 token, <strong>Frugal Bear (FRGB)</strong>. Please check your platform for more details.</p><p>Best regards,<br>Frugal Bear Team</p>"
+		plainTextContent := "Dear Elin Dau,\n\nYou have a new interaction or update regarding your ERC-20 token, Frugal Bear (tokenbyel). Please check your platform for more details.\n\nBest regards,\nFrugal Bear Team"
+		htmlContent := "<p>Dear Elin Dau,</p><p>You have a new interaction or update regarding your ERC-20 token, <strong>Frugal Bear (tokenbyel)</strong>. Please check your platform for more details.</p><p>Best regards,<br>Frugal Bear Team</p>"
 		message := mail.NewSingleEmail(from, subject, to, plainTextContent, htmlContent)
 		client := sendgrid.NewSendClient(func sendEmail() {
     from := mail.NewEmail("Frugal Bear Team", "noreply@yourdomain.com") // Replace with your actual email address
     subject := "Frugal Bear Token Interaction Notification"
     to := mail.NewEmail("Elin Dau", "elindau85@gmail.com")
-    plainTextContent := "Dear Elin Dau,\n\nYou have a new interaction or update regarding your ERC-20 token, Frugal Bear (FRGB). Please check your platform for more details.\n\nBest regards,\nFrugal Bear Team"
-    htmlContent := "<p>Dear Elin Dau,</p><p>You have a new interaction or update regarding your ERC-20 token, <strong>Frugal Bear (FRGB)</strong>. Please check your platform for more details.</p><p>Best regards,<br>Frugal Bear Team</p>"
+    plainTextContent := "Dear Elin Dau,\n\nYou have a new interaction or update regarding your ERC-20 token, Frugal Bear (tokenbyel). Please check your platform for more details.\n\nBest regards,\nFrugal Bear Team"
+    htmlContent := "<p>Dear Elin Dau,</p><p>You have a new interaction or update regarding your ERC-20 token, <strong>Frugal Bear (tokenbyel)</strong>. Please check your platform for more details.</p><p>Best regards,<br>Frugal Bear Team</p>"
 		sendEmail(elindau85@gmail.com)
 	}elindau85@gmail.com
 	git init
@@ -377,16 +371,10 @@ func sendEmail() {
     from := mail.NewEmail("Frugal Bear Team", "elindau85@gmail.com") //
     subject := "Frugal Bear Token Interaction Notification"
     to := mail.NewEmail("Elin Dau", "exampleclient@email.com")
-    plainTextContent := "Dear Elin Dau,\n\nYou have a new interaction or update regarding your ERC-20 token, Frugal Bear (FRGB). Please check your platform for more details.\n\nBest regards,\nFrugal Bear Team"
-    htmlContent := "<p>Dear Elin Dau,</p><p>You have a new interaction or update regarding your ERC-20 token, <strong>Frugal Bear (FRGB)</strong>. Please check your platform for more details.</p><p>Best t regards,<br>Frugal Bear Team</p>"
+    plainTextContent := "Dear Elin Dau,\n\nYou have a new interaction or update regarding your ERC-20 token, Frugal Bear (tokenbyel). Please check your platform for more details.\n\nBest regards,\nFrugal Bear Team"
+    htmlContent := "<p>Dear Elin Dau,</p><p>You have a new interaction or update regarding your ERC-20 token, <strong>Frugal Bear (tokenbyel)</strong>. Please check your platform for more details.</p><p>Best t regards,<br>Frugal Bear Team</p>"
     message := mail.NewSingleEmail(from, subject, to, plainTextContent, htmlContent)
-    client := sendgrid.NewSendClient("YOUR_SENDGRID_API_KEY")
-    response, err := client.Send(message))
-    response, err := client.Send(message)
-    response, err := client.Send(message)")
-    subject := "Frugal Bear Token Information"
-    to := mail.NewEmail("Elin Dau", "elindau85@gmail.com")
-    plainTextContent := `Dear Elin Dau,
+    client := sendgrid.NewSendClient(elindau@gmail.com)
 
 Here is all the information regarding the Frugal Bear token (tokenbyel):
 
