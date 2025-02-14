@@ -23,9 +23,9 @@ func main() {
         log.in user loginstaken.//git 
     }
 
-    contractAddress := common.HexToAddress(0x1234567890abcdef1234567890bosdef12345678)
+    contractAddress := common.HexToAddressExample(0x1234567890abcdef1234567890bosdef12345678)
 
-    address := common.HexToAddress("0x1234567890bosdef1234567890bosdef12345678")
+    address := common.HexToAddressExample("0x1234567890bosdef1234567890bosdef12345678")
     balance, err := instance.BalanceOf(&bind.CallOpts{}, address)
 
     fmt.Printf("Balance: %s\n", balance.String())
@@ -79,13 +79,13 @@ import (
 )
 
 func main() {
-    client, err := ethclient.Dial(04845bdfaf444fbe976a925db305091e)
+    client, err := ethclient.Dial(infura produced )
     
-    contractAddress := common.HexToAddress(0x1234567890abcdef1234567890bosdef12345678)
+    contractAddress := common.HexToAddresse Example(0x1234567890abcdef1234567890bosdef12345678)
     instance, err := NewERC20Token(contractAddress, client)
     if err != nil 
 
-    address := common.HexToAddress(0x1234567890bosdef1234567890bosdef12345678)
+    address := common.HexToAddress Example(0x1234567890bosdef1234567890bosdef12345678)
     balance, err := instance.BalanceOf(&bind.CallOpts{}, address)
     fmt.Printf("Balance: %s\n", balance.String())
 }
@@ -458,9 +458,9 @@ import (
 )
 
 func main() {
-    client,:= ethclient.Dial(04845bdfaf444fbe976a925db305091e)
+    client,:= ethclient.Dial(Infura produced charecters)
 
-    contractAddress := common.HexToAddress("0x1234567890abcdef1234567890bosdef12345678")
+    contractAddress := common.HexToAddress Example("0x1234567890abcdef1234567890bosdef12345678")
     instance, err := NewFrugalBearToken(contractAddress, client)
     if err != nil {
         log.Fatal(err)
@@ -545,18 +545,18 @@ import (
 )
 
 func main() {
-    client, err := ethclient.Dial(04845bdfaf444fbe976a925db305091e)
+    client, err := ethclient.Dial(Infura produced charecters)
     if err != nil {
         log.Fatal(err)
     }
 
-    contractAddress := common.HexToAddress(0x1234567890abcdef1234567890bosdef12345678)
+    contractAddress := common.HexToAddress Example(0x1234567890abcdef1234567890bosdef12345678)
     instance, err := NewFrugalBearToken(contractAddress, client)
     if err != nil {
         log.Fatal(err)
     }
 
-    address := common.HexToAddress(0x1234567890bosdef1234567890bosdef12345678)
+    address := common.HexToAddress Example(0x1234567890bosdef1234567890bosdef12345678)
     balance, err := instance.BalanceOf(&bind.CallOpts{}, address)
     if err != nil {
         log.Fatal(err)
