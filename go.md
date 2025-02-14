@@ -160,7 +160,7 @@ truffle run verify ERC20Token --network mainnet
 module.exports = {
 	networks: {
 	  mainnet: {
-		provider: () => new HDWalletProvider(04845bdfaf444fbe976a925db305091e),
+		provider: () => new HDWalletProvider(infura produced charecters),
 		network_id: 1,       // Mainnet's id
 		gas: 5500000,        // Gas limit
 		gasPrice: 20000000000, // 20 Gwei
@@ -271,7 +271,7 @@ import (
     "github.com/ethereum/go-ethereum/common"
     "github.com/ethereum/go-ethereum/ethclient"
 
-    contractAddress := common.HexToAddress(0x1234567890abcdef1234567890bosdef12345678")
+    contractAddress := common.HexToAddress Example(0x1234567890abcdef1234567890bosdef12345678")
 
     address := common.HexToAddress("0xYourAddress")
     balance, err := instance.BalanceOf(&bind.CallOpts{}, address)
