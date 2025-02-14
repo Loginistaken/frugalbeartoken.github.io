@@ -148,7 +148,7 @@ accounts/abi/bind"
 )
 
 func main() {
-    client, err := ethclient.Dial(04845bdfaf444fbe976a925db305091e)
+    client, err := ethclient.Dial(INfura produced charecters)
 ```
 
 Writer Dimensional Earth
